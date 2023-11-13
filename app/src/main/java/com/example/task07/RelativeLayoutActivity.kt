@@ -10,7 +10,7 @@ import android.widget.LinearLayout
 import android.widget.Spinner
 import android.widget.TableLayout
 
-class RelativeLayout : AppCompatActivity() {
+class RelativeLayoutActivity : AppCompatActivity() {
     private lateinit var spinnerEC: Spinner //Spinner Estado Civil
     private lateinit var spinnerCa: Spinner //Spinner C
 
@@ -43,20 +43,20 @@ class RelativeLayout : AppCompatActivity() {
         when (item.itemId) {
             R.id.action_linearLayout -> {
                 // Primero ponemos la actividad en la que estamos y luego a la que queremos ir.
-                val intent = Intent(this@RelativeLayout, LinearLayout::class.java)
+                val intent = Intent(this@RelativeLayoutActivity, LinearLayout::class.java)
 
                 x = true
                 startActivity(intent)
             }
 
             R.id.action_tableLayout -> {
-                val intent = Intent(this@RelativeLayout, TableLayout::class.java)
+                val intent = Intent(this@RelativeLayoutActivity, TableLayout::class.java)
                 x = true
                 startActivity(intent)
             }
 
             R.id.action_gridLayout -> {
-                val intent = Intent(this@RelativeLayout, GridLayout::class.java)
+                val intent = Intent(this@RelativeLayoutActivity, GridLayoutActivity::class.java)
                 x = true
                 startActivity(intent)
             }

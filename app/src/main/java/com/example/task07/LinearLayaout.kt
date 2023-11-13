@@ -44,13 +44,13 @@ class LinearLayaout : AppCompatActivity() {
             }
 
             R.id.action_relativeLayout -> {
-                val intent = Intent(this@LinearLayaout, RelativeLayout::class.java)
+                val intent = Intent(this@LinearLayaout, RelativeLayoutActivity::class.java)
                 x = true
                 startActivity(intent)
             }
 
             R.id.action_gridLayout -> {
-                val intent = Intent(this@LinearLayaout, GridLayout::class.java)
+                val intent = Intent(this@LinearLayaout, GridLayoutActivity::class.java)
                 x = true
                 startActivity(intent)
             }

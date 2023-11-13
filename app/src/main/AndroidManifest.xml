@@ -22,7 +22,7 @@
             android:name=".RelativeLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".GridLayout"
+            android:name=".GridLayoutActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

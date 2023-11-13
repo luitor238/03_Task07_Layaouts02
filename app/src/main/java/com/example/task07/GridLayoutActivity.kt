@@ -4,11 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TableLayout
 
-class GridLayout : AppCompatActivity() {
+class GridLayoutActivity : AppCompatActivity() {
 
     private lateinit var bntVolver : Button
 
@@ -19,7 +20,7 @@ class GridLayout : AppCompatActivity() {
         bntVolver = findViewById(R.id.btnVolver)
 
         bntVolver.setOnClickListener {
-            val intent = Intent(this@GridLayout, MainActivity::class.java)
+            val intent = Intent(this@GridLayoutActivity, MainActivity::class.java)
             startActivity(intent)
         }
     }
@@ -33,19 +34,19 @@ class GridLayout : AppCompatActivity() {
         var x = false
         when (item.itemId) {
             R.id.action_linearLayout -> {
-                val intent = Intent(this@GridLayout, LinearLayout::class.java)
+                val intent = Intent(this@GridLayoutActivity, LinearLayout::class.java)
                 x = true
                 startActivity(intent)
             }
 
             R.id.action_tableLayout -> {
-                val intent = Intent(this@GridLayout, TableLayout::class.java)
+                val intent = Intent(this@GridLayoutActivity, TableLayout::class.java)
                 x = true
                 startActivity(intent)
             }
 
             R.id.action_relativeLayout -> {
-                val intent = Intent(this@GridLayout, RelativeLayout::class.java)
+                val intent = Intent(this@GridLayoutActivity, RelativeLayoutActivity::class.java)
                 x = true
                 startActivity(intent)
             }

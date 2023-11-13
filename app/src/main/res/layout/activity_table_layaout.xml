@@ -39,7 +39,6 @@
                 android:background="#212121"
                 android:elevation="6dp"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:layout_span="4"
                 app:menu="@menu/menu_main"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 app:title="Crazy Layaouts"

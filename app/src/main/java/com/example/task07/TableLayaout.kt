@@ -7,7 +7,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.TableLayout
 
 class TableLayaout : AppCompatActivity() {
 
@@ -45,13 +44,13 @@ class TableLayaout : AppCompatActivity() {
             }
 
             R.id.action_relativeLayout -> {
-                val intent = Intent(this@TableLayaout, RelativeLayout::class.java)
+                val intent = Intent(this@TableLayaout, RelativeLayoutActivity::class.java)
                 x = true
                 startActivity(intent)
             }
 
             R.id.action_gridLayout -> {
-                val intent = Intent(this@TableLayaout, GridLayout::class.java)
+                val intent = Intent(this@TableLayaout, GridLayoutActivity::class.java)
                 x = true
                 startActivity(intent)
             }
