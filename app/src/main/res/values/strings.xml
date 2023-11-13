@@ -54,4 +54,24 @@
     <string name="num0">0</string>
     <string name="igual">=</string>
     <string name="suma">+</string>
+
+
+    <string name="producto">Producto</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="art1">Jabon de manos x 1</string>
+    <string name="art2">Shampoo Monster x 1</string>
+    <string name="art3">Pastas Duria x 2</string>
+    <string name="art4">Detergente Limpiadin</string>
+    <string name="artP1">$2</string>
+    <string name="artP2">$10</string>
+    <string name="artP3">$18</string>
+    <string name="artP4">$13,4</string>
+    <string name="subtotalT">Subtotal</string>
+    <string name="costoEnvio">Costo Envio</string>
+    <string name="cupon">Cupon</string>
+    <string name="total">Total</string>
+    <string name="subtotalP">$43,4</string>
+    <string name="costoEnvioP">$10</string>
+    <string name="cuponP">-$5</string>
+    <string name="totalP">$48,4</string>
 </resources>
