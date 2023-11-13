@@ -26,9 +26,9 @@ class MainActivity : AppCompatActivity() {
         btnGrid.setOnClickListener {
             val intent = Intent(this@MainActivity, LinearLayaout::class.java)
         }
-        btnTable.setOnClickListener {
-            val intent = Intent(this@MainActivity, TableLayaout::class.java)
-        }
+        //btnTable.setOnClickListener {
+            //val intent = Intent(this@MainActivity, TableLayaout::class.java)
+       // }
         btnRelative.setOnClickListener {
             val intent = Intent(this@MainActivity, RelativeLayoutActivity::class.java)
         }
