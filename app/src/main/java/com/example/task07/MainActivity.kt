@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, TableLayaout::class.java)
         }
         btnRelative.setOnClickListener {
-            val intent = Intent(this@MainActivity, RelativeLayaout::class.java)
+            val intent = Intent(this@MainActivity, RelativeLayoutActivity::class.java)
         }
         btnGrid.setOnClickListener {
             val intent = Intent(this@MainActivity, GridLayout::class.java)
