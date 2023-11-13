@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnGrid = findViewById(R.id.btnLinearLayaout)
+        btnLinear = findViewById(R.id.btnLinearLayaout)
         btnTable = findViewById(R.id.btnTableLayaout)
         btnRelative = findViewById(R.id.btnRelativeLayaout)
-        btnGrid = findViewById(R.id.btnGridLayaout)
+        btnGrid= findViewById(R.id.btnGridLayaout)
 
         btnLinear.setOnClickListener {
             val intent = Intent(this@MainActivity, LinearLayaout::class.java)
