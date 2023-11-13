@@ -25,15 +25,19 @@ class MainActivity : AppCompatActivity() {
 
         btnGrid.setOnClickListener {
             val intent = Intent(this@MainActivity, LinearLayaout::class.java)
+            startActivity(intent)
         }
         //btnTable.setOnClickListener {
             //val intent = Intent(this@MainActivity, TableLayaout::class.java)
+            //startActivity(intent)
        // }
         btnRelative.setOnClickListener {
             val intent = Intent(this@MainActivity, RelativeLayoutActivity::class.java)
+            startActivity(intent)
         }
         btnGrid.setOnClickListener {
             val intent = Intent(this@MainActivity, GridLayout::class.java)
+            startActivity(intent)
         }
     }
 }
