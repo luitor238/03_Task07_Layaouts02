@@ -1,12 +1,16 @@
 package com.example.task07
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.ArrayAdapter
+import android.widget.LinearLayout
 import android.widget.Spinner
+import android.widget.TableLayout
 
-class RelativeLayoutActivity : AppCompatActivity() {
+class RelativeLayout : AppCompatActivity() {
     private lateinit var spinnerEC: Spinner //Spinner Estado Civil
     private lateinit var spinnerCa: Spinner //Spinner C
 
@@ -34,25 +38,25 @@ class RelativeLayoutActivity : AppCompatActivity() {
         return true
     }
 
-    /*
-
-    //****ESTO HAY QUE PONERLO UNA VEZ ESTEN TODOAS LAS ACTIVITIES CREADAS****//
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         var x = false
         when (item.itemId) {
             R.id.action_linearLayout -> {
-                val intent = Intent(this@RelativeLayoutActivity, LinearLayout::class.java) // primero va la actividad en la que estes y luego a la que quieres ir
+                // Primero ponemos la actividad en la que estamos y luego a la que queremos ir.
+                val intent = Intent(this@RelativeLayout, LinearLayout::class.java)
+
                 x = true
                 startActivity(intent)
             }
+
             R.id.action_tableLayout -> {
-                val intent = Intent(this@RelativeLayoutActivity, tableLayout::class.java)
+                val intent = Intent(this@RelativeLayout, TableLayout::class.java)
                 x = true
                 startActivity(intent)
             }
+
             R.id.action_gridLayout -> {
-                val intent = Intent(this@RelativeLayoutActivity, gridLayout::class.java)
+                val intent = Intent(this@RelativeLayout, GridLayout::class.java)
                 x = true
                 startActivity(intent)
             }
@@ -60,7 +64,4 @@ class RelativeLayoutActivity : AppCompatActivity() {
         }
         return x
     }
-
-    */
-
 }
