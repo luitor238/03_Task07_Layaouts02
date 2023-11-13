@@ -18,6 +18,7 @@ class LinearLayaout : AppCompatActivity() {
 
         bntVolver.setOnClickListener {
             val intent = Intent(this@LinearLayaout, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
