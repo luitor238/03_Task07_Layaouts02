@@ -24,7 +24,8 @@
         android:layout_marginHorizontal="@dimen/margenIzDe"
         android:layout_marginTop="16dp"
         android:hint="@string/nombre"
-        android:inputType="text" />
+        android:inputType="text"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/editTextApellido"
@@ -33,7 +34,8 @@
         android:layout_below="@+id/editTextNombre"
         android:layout_marginHorizontal="@dimen/margenIzDe"
         android:hint="@string/Apellidos"
-        android:inputType="text" />
+        android:inputType="text"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/textView_EC"

@@ -16,6 +16,12 @@
             android:name=".LinearLayaout"
             android:exported="false" />
         <activity
+            android:name=".RelativeLayoutActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".GridLayout"
+            android:exported="false"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
