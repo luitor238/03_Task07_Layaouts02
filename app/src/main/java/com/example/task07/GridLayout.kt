@@ -6,18 +6,15 @@ import android.os.Bundle
 import android.view.Menu
 import android.widget.Button
 
-class LinearLayaout : AppCompatActivity() {
-
+class GridLayout : AppCompatActivity() {
     private lateinit var bntVolver : Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_linear_layaout)
-
+        setContentView(R.layout.activity_grid_layout)
         bntVolver = findViewById(R.id.btnVolver)
 
         bntVolver.setOnClickListener {
-            val intent = Intent(this@LinearLayaout, MainActivity::class.java)
+            val intent = Intent(this@GridLayout, MainActivity::class.java)
         }
     }
 
@@ -25,5 +22,4 @@ class LinearLayaout : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
-
 }
