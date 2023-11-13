@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         btnRelative = findViewById(R.id.btnRelativeLayaout)
         btnGrid = findViewById(R.id.btnGridLayaout)
 
-        btnGrid.setOnClickListener {
+        btnLinear.setOnClickListener {
             val intent = Intent(this@MainActivity, LinearLayaout::class.java)
             startActivity(intent)
         }
