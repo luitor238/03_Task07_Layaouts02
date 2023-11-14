@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TableLayout
 
 class GridLayoutActivity : AppCompatActivity() {
 
@@ -31,27 +29,33 @@ class GridLayoutActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        var x = false
-        when (item.itemId) {
+        return when (item.itemId) {
             R.id.action_linearLayout -> {
-                val intent = Intent(this@GridLayoutActivity, LinearLayout::class.java)
-                x = true
-                startActivity(intent)
+                iniciarLinear()
+                true
             }
-
             R.id.action_tableLayout -> {
-                val intent = Intent(this@GridLayoutActivity, TableLayout::class.java)
-                x = true
-                startActivity(intent)
+                iniciarTable()
+                true
             }
-
             R.id.action_relativeLayout -> {
-                val intent = Intent(this@GridLayoutActivity, RelativeLayoutActivity::class.java)
-                x = true
-                startActivity(intent)
+                iniciarRelative()
+                true
             }
             else -> super.onOptionsItemSelected(item)
         }
-        return x
+    }
+
+    private fun iniciarLinear(){
+        val intent = Intent(this@GridLayoutActivity, LinearLayaoutActivity::class.java)
+        startActivity(intent)
+    }
+    private fun iniciarTable(){
+        val intent = Intent(this@GridLayoutActivity, TableLayaoutActivity::class.java)
+        startActivity(intent)
+    }
+    private fun iniciarRelative(){
+        val intent = Intent(this@GridLayoutActivity, RelativeLayoutActivity::class.java)
+        startActivity(intent)
     }
 }

@@ -13,17 +13,17 @@
         android:theme="@style/Theme.Task07"
         tools:targetApi="31">
         <activity
-            android:name=".TableLayaout"
-            android:exported="false" />
+            android:name=".TableLayaoutActivity"
+            android:exported="true" />
         <activity
-            android:name=".LinearLayaout"
-            android:exported="false" />
+            android:name=".LinearLayaoutActivity"
+            android:exported="true" />
         <activity
             android:name=".RelativeLayoutActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".GridLayoutActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

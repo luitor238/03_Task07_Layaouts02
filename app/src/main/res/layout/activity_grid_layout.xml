@@ -25,6 +25,7 @@
         app:strokeColor="#d6d7d7" />
 
     <androidx.gridlayout.widget.GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_row="4"

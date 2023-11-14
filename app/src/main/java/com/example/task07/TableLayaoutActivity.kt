@@ -6,23 +6,22 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.TableLayout
 
-class LinearLayaout : AppCompatActivity() {
+class TableLayaoutActivity : AppCompatActivity() {
 
     // Inicializamos la variable boton.
     private lateinit var bntVolver : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_linear_layaout)
+        setContentView(R.layout.activity_table_layaout)
 
         // Asigno la variable al boton "Volver" del activity.
         bntVolver = findViewById(R.id.btnVolver)
 
         // Le damos la funcion al boton.
         bntVolver.setOnClickListener {
-            val intent = Intent(this@LinearLayaout, MainActivity::class.java)
+            val intent = Intent(this@TableLayaoutActivity, MainActivity::class.java)
             startActivity(intent)
         }
     }
@@ -34,29 +33,33 @@ class LinearLayaout : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        var x = false
-        when (item.itemId) {
-
-            R.id.action_tableLayout -> {
-                val intent = Intent(this@LinearLayaout, TableLayout::class.java)
-                x = true
-                startActivity(intent)
+        return when (item.itemId) {
+            R.id.action_linearLayout -> {
+                iniciarLinear()
+                true
             }
-
             R.id.action_relativeLayout -> {
-                val intent = Intent(this@LinearLayaout, RelativeLayoutActivity::class.java)
-                x = true
-                startActivity(intent)
+                iniciarRelative()
+                true
             }
-
             R.id.action_gridLayout -> {
-                val intent = Intent(this@LinearLayaout, GridLayoutActivity::class.java)
-                x = true
-                startActivity(intent)
+                iniciarGrid()
+                true
             }
             else -> super.onOptionsItemSelected(item)
         }
-        return x
     }
 
+    private fun iniciarLinear(){
+        val intent = Intent(this@TableLayaoutActivity, LinearLayaoutActivity::class.java)
+        startActivity(intent)
+    }
+    private fun iniciarRelative(){
+        val intent = Intent(this@TableLayaoutActivity, RelativeLayoutActivity::class.java)
+        startActivity(intent)
+    }
+    private fun iniciarGrid(){
+        val intent = Intent(this@TableLayaoutActivity, GridLayoutActivity::class.java)
+        startActivity(intent)
+    }
 }

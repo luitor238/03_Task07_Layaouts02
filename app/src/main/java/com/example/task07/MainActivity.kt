@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.GridLayout
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,12 +28,12 @@ class MainActivity : AppCompatActivity() {
         // Les damos la accion a los botones.
         btnLinear.setOnClickListener {
             // Primero ponemos la actividad en la que estamos y luego a la que queremos ir.
-            val intent = Intent(this@MainActivity, LinearLayaout::class.java)
+            val intent = Intent(this@MainActivity, LinearLayaoutActivity::class.java)
             startActivity(intent)
         }
 
         btnTable.setOnClickListener {
-            val intent = Intent(this@MainActivity, TableLayaout::class.java)
+            val intent = Intent(this@MainActivity, TableLayaoutActivity::class.java)
             startActivity(intent)
         }
 
